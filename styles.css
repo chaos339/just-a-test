@@ -1,0 +1,21 @@
+body {
+    margin: 200px;
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+      }
+    
+form {
+      background-color: #ece7b5;
+      font-weight: bold;
+      border-radius: 10px;
+      font-family: Courier New, monospace;
+      padding: 15px;
+      font-size: 20px;
+      border-style: solid;
+      }
+h1, p   {
+	text-align: center;
+	text-shadow: 2px 2px #FFFFFF;
+	font-family: Courier New, monospace;
+	font-style: bold;
+	}

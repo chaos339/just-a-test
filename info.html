@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <title>Your information</title>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+<form class="your-info">
+    <center><h3> Your Information</h3>
+    First Name: <span id="p-fname"> </span> <br>
+    Last Name:<span id="p-lname"> </span> <br>
+    Age:    <span id="p-age"></span> <br>
+    Address:    <span id="p-address"> </span> <br>
+    Contact Number:     <span id="p-number"> </span> <br>
+    Occupation:     <span id="p-occupation"> </span> <br>
+    Email Address:  <span id="p-email"></span> <br>
+    Date Of Birth:  <span id="p-bdate"></span> <br>
+    Relationshisp Status: <span id="p-status"> </span> <br>
+    Monthly Salary:  <span id="p-salary"> </span> <br></center>
+</form>
+
+<script>
+    window.addEventListener('load', () => {
+
+const fname = localStorage.getItem('fname');
+const lname = localStorage.getItem('lname');
+const age = localStorage.getItem('age');
+const address = localStorage.getItem('address');
+const cnumber = localStorage.getItem('cnumber');
+const occupation = localStorage.getItem('occupation');
+const email = localStorage.getItem('email');
+const bdate = localStorage.getItem('bdate');
+const rstatus = localStorage.getItem('rstatus');
+const salary = localStorage.getItem('salary');
+
+document.getElementById('p-fname').innerHTML = fname;
+document.getElementById('p-lname').innerHTML = lname;
+document.getElementById('p-age').innerHTML = age;
+document.getElementById('p-address').innerHTML = address;
+document.getElementById('p-number').innerHTML = cnumber;
+document.getElementById('p-occupation').innerHTML = occupation;
+document.getElementById('p-email').innerHTML = email;
+document.getElementById('p-bdate').innerHTML = bdate;
+document.getElementById('p-status').innerHTML = rstatus;
+document.getElementById('p-salary').innerHTML = salary;
+
+})
+</script>
+
+
+</body>
+</html>

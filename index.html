@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <title> Personal Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Personal Information</h1>
+<p>Please Enter Your Personal Information. After that, Click the Submit Button.</p>
+
+<form action="info.html" onsubmit="myFunction()">
+Enter First Name: <input type="text" id="fname"> <br> <br>
+Enter Last Name: <input type="text" id="lname"> <br> <br>
+Enter Age: <input type="text" id="age"> <br> <br>
+Enter Address: <input type="text" id="address"> <br> <br>
+Enter Contact Number: <input type="text" id="cnumber"> <br> <br>
+Enter Occupation: <input type="text" id="occupation"> <br> <br>
+Enter Email Address: <input type="text" id="email"> <br> <br>
+Enter Date of Birth(MM/DD/YYYY): <input type="text" id="bdate"> <br> <br>
+Enter Relationship Status: <input type="text" id="rstatus"> <br> <br>
+Enter Monthly Salary: <input type="text" id="salary"> <br> <br> <br>
+
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+
+    alert("The form was submitted");
+    
+    const fname = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const age = document.getElementById('age').value;
+    const address = document.getElementById('address').value;
+    const cnumber = document.getElementById('cnumber').value;
+    const occupation = document.getElementById('occupation').value;
+    const email = document.getElementById('email').value;
+    const bdate = document.getElementById('bdate').value;
+    const rstatus = document.getElementById('rstatus').value;
+    const salary = document.getElementById('salary').value;
+    
+    localStorage.setItem("fname", fname);
+    localStorage.setItem("lname", lname);
+    localStorage.setItem("age", age);
+    localStorage.setItem("address", address);
+    localStorage.setItem("cnumber", cnumber);
+    localStorage.setItem("occupation", occupation);
+    localStorage.setItem("email", email);
+    localStorage.setItem("bdate", bdate);
+    localStorage.setItem("rstatus", rstatus);
+    localStorage.setItem("salary", salary);
+    
+    return;
+    
+    }
+</script>
+
+</body>
+</html>
